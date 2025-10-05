@@ -1,13 +1,13 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/fitness-micro-user
-    username: postgres
-    password: admin@123
+    url: jdbc:mysql://localhost:3306/fitnessmicrouser
+    username: root
+    password: root
 
   jpa:
     hibernate:
       ddl-auto: update
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database-platform: org.hibernate.dialect.MySQL8Dialect
 
 eureka:
   client:
